@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container-produto{
+    border-bottom: 2px solid #fff;
+    background-color: rgb(191, 173, 192);
+    padding:0rem 4rem;
+
+
+    h2{
+        padding-top: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+        color:#fff;
+    }
+    
+label{
+    text-transform:capitalize;
+    color: #000;
+    }
+    
+
+    .form{
+    
+    
+        input{
+            margin-top: 10px;
+            height:40px;
+            width:100%;
+            border-radius: 5px;
+            outline: none;
+            padding-left: 0.8rem;
+        }
+
+        .descri-cod{
+            display:grid;
+            grid-template-columns:5fr 1fr;
+            gap: 10px;
+            
+        } 
+        .fabr-fornec,.preco-qtd{
+            margin-top: 10px;
+         display:grid;
+         grid-template-columns:1fr 1fr;
+         gap: 10px;
+         
+        }
+     
+    
+  }
+    
+  .btn{
+    width:40%;
+    height:60px;
+    background-color: #e24646;
+    color:#fff;
+    border-radius: 5px;
+    margin: 20px 0px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;        
+}
+}

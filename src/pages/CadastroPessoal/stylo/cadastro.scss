@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+ background-color: #79677e;
+ width: 100%;
+ height:900px;
+ 
+
+
+ h2{
+    padding-top: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color:#fff;
+}
+
+h3{
+    width:30%;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #000;
+}
+
+label{
+text-transform:capitalize;
+color: #000;
+}
+
+}
+
+
+.division{
+    
+    margin:2rem 4rem;
+
+}
+
+.inf-pessoal{
+    h2{
+        font-size: 2rem;
+    }
+}
+
+.formulario{
+    display:grid;
+    
+    input{
+        margin-top: 10px;
+        height:40px;
+        width:100%;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 0.8rem;
+    }
+
+    .form-cpf-email,.cidade-cep{
+        margin-top: 10px; 
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+    }
+    .endereco-numero{
+        
+        display:grid;
+        grid-template-columns: 7fr 1fr ;
+        gap: 10px;
+           
+    }
+
+    .cidade-bairo-uf{
+        margin-top: 10px;
+        display:grid;
+        grid-template-columns:4fr 3fr 1fr;
+        gap: 10px;
+    }
+
+    .comple-cep{
+        margin: 10px 0px; 
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-bottom: 100px;
+    }
+
+}
+
+
+
+
+
