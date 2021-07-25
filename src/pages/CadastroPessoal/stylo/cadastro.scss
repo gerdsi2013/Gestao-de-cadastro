@@ -11,7 +11,6 @@
  height:900px;
  
 
-
  h2{
     padding-top: 3rem;
     text-align: center;
@@ -89,7 +88,19 @@ color: #000;
         display:grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
-        padding-bottom: 100px;
+        padding-bottom: 10px;
+    }
+
+    .btn{
+        width:40%;
+    height:60px;
+    background-color: #e24646;
+    color:#fff;
+    border-radius: 5px;
+    margin: 20px 0px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;   
     }
 
 }
