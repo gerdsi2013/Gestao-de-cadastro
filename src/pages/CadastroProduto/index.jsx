@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "../CadastroProduto/stylo/response.scss"
 import "../CadastroProduto/stylo/produto.scss";
 
 export function CadastroProduto() {
@@ -37,6 +37,7 @@ export function CadastroProduto() {
             type="text" 
             name="descricao" 
             id="descricao"
+            placeholder="Descrição do produto"
             value={descricao}
             onChange = {(e) => setdescricao(e.target.value)} />
           </div>
@@ -52,15 +53,13 @@ export function CadastroProduto() {
           </div>
         </div>
 
-
-
-
         <div className="fabr-fornec">
           <div className="fabricante">
             <label>fabricante</label>
             <input type="text"
              name="fabricante"
               id="fabricante"
+              placeholder="Fabricante"
               value = {fabricante}
               onChange = {(e)=> setfabricante (e.target.value)} />
           </div>
@@ -70,6 +69,7 @@ export function CadastroProduto() {
             <input type="text"
              name="fornecedor"
               id="fornecedor"
+              placeholder="Fornecedor"
               value ={fornecedor}
               onChange = {(e)=> setfornecedor (e.target.value)}/>
           </div>
@@ -81,6 +81,7 @@ export function CadastroProduto() {
           <input type="text"
            name="preco"
             id="preco"
+            placeholder="R$"
             value={preco}
             onChange = {(e)=> setpreco(e.target.value)}/>
         </div>
@@ -91,6 +92,7 @@ export function CadastroProduto() {
            name="quantidade"
             id="quantidade"
             value={qtd}
+            placeholder="Quantidade"
             onChange = {(e)=> setqtd(e.target.value)}/>
         </div>
         </div>

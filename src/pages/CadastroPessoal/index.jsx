@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../CadastroPessoal/stylo/cadastro.scss";
 import "../CadastroProduto/stylo/produto.scss";
+import '../CadastroPessoal/stylo/response.scss'
 
 export function CadastroPessoal() {
   const [nome, setnome] = useState("");
@@ -44,6 +45,7 @@ export function CadastroPessoal() {
                 type="text"
                 name="nome"
                 id="nome"
+                placeholder="Nome"
                 value={nome}
                 onChange={(e) => setnome(e.target.value)}
               />
@@ -56,6 +58,7 @@ export function CadastroPessoal() {
                   type="number"
                   name="cpf"
                   id="cpf"
+                  placeholder="xxx.xxx.xxx-xx"
                   value={cpf}
                   onChange={(e) => setcpf(e.target.value)}
                 />
@@ -77,6 +80,7 @@ export function CadastroPessoal() {
                   name="telefone"
                   id="telefone"
                   value={telefone}
+                  placeholder="(xx)xxxxx-xxxx"
                   onChange={(e) => settelefone(e.target.value)}
                 />
               </div>
@@ -87,7 +91,9 @@ export function CadastroPessoal() {
                   type="email"
                   name="email"
                   id="email"
+                  placeholder="exemplo@exmplo.com"
                   value={email}
+                  required
                   onChange={(e) => setemail(e.target.value)}
                 />
               </div>
@@ -106,6 +112,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="endereco"
                   id="endereco"
+                  placeholder="Rua"
                   value={endereco}
                   onChange={(e) => setendereco(e.target.value)}
                 />
@@ -117,6 +124,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="numero"
                   id="numero"
+                  placeholder="xx"
                   value={numero}
                   onChange={(e) => setnumero(e.target.value)}
                 />
@@ -130,6 +138,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="cidade"
                   id="cidade"
+                  placeholder="Cidade"
                   value={cidade}
                   onChange={(e) => setcidade(e.target.value)}
                 />
@@ -141,6 +150,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="bairro"
                   id="bairro"
+                  placeholder="Bairro"
                   value={bairro}
                   onChange={(e) => setbairro(e.target.value)}
                 />
@@ -151,6 +161,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="uf"
                   id="uf"
+                  placeholder="uf"
                   value={uf}
                   onChange={(e) => setuf(e.target.value)}
                 />
@@ -164,6 +175,7 @@ export function CadastroPessoal() {
                   type="text"
                   name="cidade"
                   id="cidade"
+                  placeholder="XX.xxx-xx"
                   value={cidade}
                   onChange={(e) => setcidade(e.target.value)}
                 />
@@ -171,9 +183,10 @@ export function CadastroPessoal() {
               <div>
                 <label>Cep</label>
                 <input
-                  type="number"
+                  type="text"
                   name="cep"
                   id="cep"
+                  required pattern="[0-9]"
                   value={cep}
                   onChange={(e) => setcep(e.target.value)}
                 />

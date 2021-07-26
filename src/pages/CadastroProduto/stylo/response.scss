@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:500px){
+    
+    .container-produto{
+        padding:0 2rem;
+
+
+
+
+    .form{
+        .descri-cod,.fabr-fornec,.preco-qtd{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+            
+    }
+    }
+
+}

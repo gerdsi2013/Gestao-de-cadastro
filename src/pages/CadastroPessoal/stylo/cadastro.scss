@@ -1,3 +1,9 @@
+
+
+$colorBlack:#000;
+$colorWhite:#fff;
+
+
 *{
     padding: 0;
     margin: 0;
@@ -5,10 +11,12 @@
     box-sizing: border-box;
 }
 
+
+
 .container{
  background-color: #79677e;
  width: 100%;
- height:900px;
+ height:1000px;
  
 
  h2{
@@ -16,11 +24,11 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 2.4rem;
-    color:#fff;
+    color:$colorWhite;
 }
 
 h3{
-    width:30%;
+    width:100%;
     margin-bottom: 2rem;
     padding-top: 2rem;
     font-weight: bold;
@@ -31,11 +39,10 @@ h3{
 
 label{
 text-transform:capitalize;
-color: #000;
+color: $colorBlack;
 }
 
 }
-
 
 .division{
     
@@ -86,7 +93,7 @@ color: #000;
     .comple-cep{
         margin: 10px 0px; 
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 1fr;
         gap: 10px;
         padding-bottom: 10px;
     }
@@ -95,12 +102,18 @@ color: #000;
         width:40%;
     height:60px;
     background-color: #e24646;
-    color:#fff;
+    color:$colorWhite;
     border-radius: 5px;
     margin: 20px 0px;
     font-size: 1.4rem;
     text-transform: uppercase;
-    cursor: pointer;   
+    cursor: pointer;
+    transition:1s; 
+
+    &:hover{
+        transition:1s;
+    filter: brightness(0.7);
+    }
     }
 
 }

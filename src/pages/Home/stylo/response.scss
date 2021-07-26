@@ -6,12 +6,21 @@
 
 }
 
-@media screen and (max-width:850px){
- 
- .container-child{
+@media screen and (max-width:700px){
 
+  .container-main{
+
+  .container-child{
     .text{
-      width: 100%;
+      width: 60%;
+      padding-left: 2rem;
+      h2{
+        font-size:1.8rem;
+      }
+      h3{
+        font-size: 1rem;
+      }
     }
- }
+  }
+}
 }
