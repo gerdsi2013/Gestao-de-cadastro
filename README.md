@@ -1,3 +1,15 @@
+
+# Project description
+-This site was developed for vtex's 2nd hiring coding challenge.
+
+- The React library was used in its construction, and the sass framework version 5.0.0 for page styling.
+
+- Yarn was also used for package management.
+
+-Packages used in its construction was react icons.
+
+- Faced with the proposed challenge, this project aims to collect the information typed in the input fields, and store it in the browser's localstore.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
